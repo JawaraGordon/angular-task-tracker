@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {HttpClient, HttpHeaders } from '@angular/common/http';
 //how to use an observable for async data 1. import
 import { Observable, of } from 'rxjs'
 
