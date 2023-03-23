@@ -10,16 +10,24 @@ import {TASKS} from '../mock-tasks'
   providedIn: 'root'
 })
 export class TaskService {
+  //working with json server 
+private apiUrl = 'http://localhost:3000/tasks'
+//adding private context for http module  
+constructor(private http:HttpClient) { }
 
-  constructor() { }
+// using http to fetch data in tasks func instead of file
+getTasks(): Observable<Task[]> {
+  return this.http.get<Task[]>(this.apiUrl)
+}
 
   //how to use an observable 2. set type as:Observable<xyz>
-  getTasks(): Observable<Task[]> {
-    // 3. save as var, wrap in of()
-    const tasks = of(TASKS);
-    return tasks
-  }
-
+  // getTasks(): Observable<Task[]> {
+  //   // 3. save as var, wrap in of()
+  //   const tasks = of(TASKS);
+  //   return tasks
+  // }
+  
+  
   //using local file without observable 
   // getTasks(): Task[] {
   //   return TASKS;
