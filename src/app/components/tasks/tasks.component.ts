@@ -19,8 +19,13 @@ export class TasksComponent implements OnInit{
 // setting func to allow observability 
     this.taskService.getTasks().subscribe((tasks)=>{this.tasks = tasks})
 
+
     //use func context to show data
     // this.tasks = this.taskService.getTasks()
+  }
+
+  deleteTask(task: Task){
+    this.taskService.deleteTask(task).subscribe(()=>(this.tasks = this.tasks.filter(t=>t.id !== task.id)))
   }
 
 }

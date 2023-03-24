@@ -1,22 +1,22 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "text": "Coffee Chat",
-            "day": "May 5th at 2:30pm",
-            "reminder": true
-        },
-        {
-            "id": 2,
-            "text": "Dev Meetup",
-            "day": "May 6th at 6:30pm",
-            "reminder": true
-        },
-        {
-            "id": 3,
-            "text": "SWE Conference",
-            "day": "May 7th at 12:30pm",
-            "reminder": false
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Coffee Chat",
+      "day": "May 5th at 2:30pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Dev Meetup",
+      "day": "May 6th at 6:30pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "SWE Conference",
+      "day": "May 7th at 12:30pm",
+      "reminder": false
+    }
+  ]
 }
