@@ -1,10 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders } from '@angular/common/http';
-//how to use an observable for async data 1. import
-import { Observable, of } from 'rxjs'
+//how to use an observable for async data 1. import 
+// must import of to use local data
+// import { Observable, of } from 'rxjs'
+
+import { Observable } from 'rxjs'
 
 import {Task} from '../Task'
-import {TASKS} from '../mock-tasks'
+
+// using local TASKS data 
+// import {TASKS} from '../mock-tasks'
 
 @Injectable({
   providedIn: 'root'
