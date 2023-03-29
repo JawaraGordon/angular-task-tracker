@@ -9,16 +9,22 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: lightgreen;
 }
 
+
 .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 3px solid brown;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
+  z-index: 1;
 }
 .btn {
   display: inline-block;
@@ -74,4 +80,27 @@ body {
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+
+.bg-img {
+  margin:auto;
+  width: 20rem;
+} 
+.bg-img img{
+  margin:auto;
+  width: 20rem;
+} 
+
+#overlay {
+  position: fixed; 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../src/assets/img/pizza-bg.png");
+  background-size: 50%;
+  z-index: 0; 
 }
